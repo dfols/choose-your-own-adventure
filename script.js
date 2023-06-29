@@ -26,6 +26,16 @@ const rooms = [
       { text: "Go to front room", nextRoom: 0 },
     ],
   },
+  {
+    id: 10,
+    title: "Mop Closet",
+    description: "You are at the office's closet",
+    image: "images/office-closet.jpeg",
+    choices: [
+      { text: "Go to stairs", nextRoom: 1 },
+      { text: "Go to front room", nextRoom: 0 },
+    ],
+  },
 ];
 
 const roomTitle = document.getElementById("room-title");
