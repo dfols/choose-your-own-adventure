@@ -26,6 +26,16 @@ const rooms = [
       { text: "Go to front room", nextRoom: 0 },
     ],
   },
+  {
+    id: 6,
+    title: "Utlity Room",
+    description: "You are in an utility room.",
+    image: 'test',
+    choices: [
+      { text: "Go to press button", nextRoom: 7 },
+      { text: "Go back", nextRoom: 8 },
+    ],
+  },
 ];
 
 const roomTitle = document.getElementById("room-title");
