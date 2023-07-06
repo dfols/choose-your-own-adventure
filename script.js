@@ -34,6 +34,7 @@ const rooms = [
     choices: [
       { text: "Go to stairs", nextRoom: 1 },
       { text: "Go to front room", nextRoom: 0 },
+      { text: "Go to meeting room", nextRoom: 2 },
     ],
   },
 ];
@@ -44,7 +45,7 @@ const roomDescription = document.getElementById("room-description");
 const roomChoices = document.getElementById("room-choices");
 
 function goToRoom(roomId) {
-  const room = rooms.find((r) => r.id === roomId);
+  const room = rooms.find((roomInTheArray) => roomInTheArray.id === roomId);
 
   roomTitle.textContent = room.title;
   roomImage.src = room.image;
